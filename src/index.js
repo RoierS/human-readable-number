@@ -22,8 +22,8 @@ module.exports = function toReadable (number) {
         return `${zeroToNineteen[getZeroIndex]} hundred ${zeroToNineteen[getTeen]}`;
     } else if(getSecondIndex == '0'){
         return `${zeroToNineteen[getZeroIndex]} hundred ${tenToNinety[getFirstIndex]}`
-    } else if((number < 210 && number > 200) || (number < 310 && number > 300) || (number < 410 && number > 400) || (number < 510 && number > 500) || (number < 610 && number > 600) || (number < 710 && number > 700) || (number < 810 && number > 800) || (number < 910 && number > 900)) {
-        return `${zeroToNineteen[getZeroIndex]} hundred ${zeroToNineteen[Number(getSecondIndex)]}`;
+    } else if((number < 220 && number > 200) || (number < 320 && number > 300) || (number < 420 && number > 400) || (number < 520 && number > 500) || (number < 620 && number > 600) || (number < 720 && number > 700) || (number < 820 && number > 800) || (number < 920 && number > 900)) {
+        return `${zeroToNineteen[getZeroIndex]} hundred ${zeroToNineteen[getTeen]}`;
     } else if(number < 1000) {
         return `${zeroToNineteen[getZeroIndex]} hundred ${tenToNinety[getFirstIndex]} ${zeroToNineteen[getSecondIndex]}`;
     } 
